@@ -7,10 +7,11 @@ CREATE TABLE project (
 id INTEGER PRIMARY KEY, 
 title TEXT,
 category TEXT,
-funding_goal INTEGER, 
-start_date);
+funding_goal REAL, 
+start_date TEXT, 
+end_date TEXT);
 
-CREATE TABLE user (
+CREATE TABLE pledge (
 id INTEGER PRIMARY KEY, 
-name TEXT,
-age INTEGER);
+user_id INTEGER,
+project_id INTEGER);
